@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'SpaceGroteskBold';
+    src: url('../assets/fonts/static/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+  }
+
+
+  @font-face{
+    font-family: 'SpaceGroteskMedium';
+    src: url('../assets/fonts/static/SpaceGrotesk-Medium.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SpaceGroteskBold','SpaceGroteskBold';
+  }
