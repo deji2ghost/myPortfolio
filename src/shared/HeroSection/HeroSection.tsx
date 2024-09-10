@@ -45,7 +45,7 @@ const HeroSection =():React.ReactElement=>{
             Based in the Nigeria, I’m a front-end developer passionate about building accessible web apps that users love.
         </p>
 
-        <a className='contact' href='mailto:markothedevmail@gmail.com'>
+        <a className='contact' href='mailto:dejiwilliams9@gmail.com'>
           <UnderLineSpan small_border={true} giveSpace={true}>
           CONTACT ME
           </UnderLineSpan>
