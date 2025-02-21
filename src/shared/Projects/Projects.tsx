@@ -7,7 +7,7 @@ import checkidImg from '../../assets/images/boilerplates.png'
 import EmetricImg  from '../../assets/images/tifi.png'
 import meticapp from '../../assets/images/telex.png'
 import manna from '../../assets/images/lazyD.png'
-import table from '../../assets/images/table.png'
+import table from '../../assets/images/Table.png'
 const Projects = ():React.ReactElement=>{
   const isTab = useMediaQuery({
     query: '(min-width: 800px)'
