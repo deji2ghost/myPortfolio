@@ -35,7 +35,7 @@ const Projects = ():React.ReactElement=>{
       accessVariant:isTab?'hover':'static',
       code_url:'#',
       website_url:'https://intellisight-two.vercel.app/',
-      stacks:['REACT JS','Context Api', 'TailwindCss'],
+      stacks:['Next JS','Context Api', 'TailwindCss'],
       projectName:'CoinTable with darkmode.',
       projectImage: table
     },    
