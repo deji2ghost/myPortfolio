@@ -38,6 +38,14 @@ function App() {
       title:'NextJS',
       yearsOfExp:2,
     },
+    {
+      title:'NodeJS',
+      yearsOfExp:2,
+    },
+    {
+      title:'MySQL',
+      yearsOfExp:2,
+    },
   ]
   const isTab = useMediaQuery({
     query: '(min-width: 600px)'
