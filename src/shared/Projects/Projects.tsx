@@ -7,20 +7,13 @@ import checkidImg from '../../assets/images/boilerplates.png'
 import EmetricImg  from '../../assets/images/tifi.png'
 import meticapp from '../../assets/images/telex.png'
 import manna from '../../assets/images/lazyD.png'
+import table from '../../assets/images/table.png'
 const Projects = ():React.ReactElement=>{
   const isTab = useMediaQuery({
     query: '(min-width: 800px)'
   })
 
   const porfolio_data:PortfolioDisplayProp[] =[
-    {
-      accessVariant:isTab?'hover':'static',
-      code_url:'#',
-      website_url:'https://staging.nextjs.boilerplate.hng.tech/',
-      stacks:['Tailwindcss','NEXTJS', 'Context Api', 'Radix Ui'],
-      projectName:'Boilerplates',
-      projectImage:checkidImg
-    },
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
@@ -41,10 +34,10 @@ const Projects = ():React.ReactElement=>{
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
-      website_url:'https://e-commerce-lilac-two.vercel.app/',
-      stacks:['REACT JS','Redux Toolkit', 'TailwindCss'],
-      projectName:'LazyD E-commerce store.',
-      projectImage:manna
+      website_url:'https://intellisight-two.vercel.app/',
+      stacks:['REACT JS','Context Api', 'TailwindCss'],
+      projectName:'CoinTable with darkmode.',
+      projectImage: table
     },    
   ]
   return (
