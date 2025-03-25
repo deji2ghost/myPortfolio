@@ -16,7 +16,7 @@ const Projects = ():React.ReactElement=>{
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
-      website_url:'https://www.asteriskrd.co/',
+      website_url:'https://asteriskrd.co/',
       stacks:['Tailwind Css','REACTJS'],
       projectName:'Tifi Video and Audio converter',
       projectImage:asterisk
