@@ -2,12 +2,11 @@ import { useMediaQuery } from 'react-responsive'
 import PortfolioDisplay, { PortfolioDisplayProp } from '../PortfoilioDisplay/PortfolioDisplay'
 import UnderLineSpan from '../UnderLineSpan/UnderLineSpan'
 import { ListOFProject, ProjectsContainer, ProjectsHeaderContainer } from './Projects.style'
-import Projectdummy from '../../assets/images/projectdummy.webp'
-import checkidImg from '../../assets/images/boilerplates.png'
 import EmetricImg  from '../../assets/images/tifi.png'
 import meticapp from '../../assets/images/telex.png'
-import manna from '../../assets/images/lazyD.png'
 import table from '../../assets/images/Table.png'
+import fonu from '../../assets/images/Screenshot (7).png'
+import asterisk from '../../assets/images/Screenshot (8).png'
 const Projects = ():React.ReactElement=>{
   const isTab = useMediaQuery({
     query: '(min-width: 800px)'
@@ -17,12 +16,19 @@ const Projects = ():React.ReactElement=>{
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
+      website_url:'https://www.asteriskrd.co/',
+      stacks:['Tailwind Css','REACTJS'],
+      projectName:'Tifi Video and Audio converter',
+      projectImage:asterisk
+    },
+    {
+      accessVariant:isTab?'hover':'static',
+      code_url:'#',
       website_url:'https://tifi.tv/',
       stacks:['Tailwind Css','NEXTJS', 'Radix Ui'],
       projectName:'Tifi Video and Audio converter',
       projectImage:EmetricImg
     },
-
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
@@ -38,6 +44,14 @@ const Projects = ():React.ReactElement=>{
       stacks:['Next JS','Context Api', 'TailwindCss'],
       projectName:'CoinTable with darkmode.',
       projectImage: table
+    },    
+    {
+      accessVariant:isTab?'hover':'static',
+      code_url:'#',
+      website_url:'https://fonutaskmanagement.vercel.app/',
+      stacks:['Next JS','Redux', "Redux Toolkit", 'TailwindCss'],
+      projectName:'CoinTable with darkmode.',
+      projectImage: fonu
     },    
   ]
   return (
