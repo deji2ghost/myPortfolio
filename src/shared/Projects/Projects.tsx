@@ -16,7 +16,7 @@ const Projects = ():React.ReactElement=>{
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
-      website_url:'https://asteriskrd.co/',
+      website_url:'https://www.asteriskrd.co/',
       stacks:['Tailwind Css','REACTJS'],
       projectName:'Tifi Video and Audio converter',
       projectImage:asterisk
@@ -49,7 +49,7 @@ const Projects = ():React.ReactElement=>{
       accessVariant:isTab?'hover':'static',
       code_url:'#',
       website_url:'https://fonutaskmanagement.vercel.app/',
-      stacks:['Next JS','Redux', "Redux Toolkit", 'TailwindCss'],
+      stacks:['Next JS','Redux', 'Redux Toolkit', 'TailwindCss'],
       projectName:'CoinTable with darkmode.',
       projectImage: fonu
     },    
