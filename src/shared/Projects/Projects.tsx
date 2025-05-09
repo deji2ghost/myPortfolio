@@ -5,6 +5,7 @@ import { ListOFProject, ProjectsContainer, ProjectsHeaderContainer } from './Pro
 import EmetricImg  from '../../assets/images/tifi.png'
 import meticapp from '../../assets/images/telex.png'
 import table from '../../assets/images/Table.png'
+import borough from '../../assets/images/Screenshot (15).png'
 import fonu from '../../assets/images/Screenshot (7).png'
 import asterisk from '../../assets/images/Screenshot (8).png'
 const Projects = ():React.ReactElement=>{
@@ -36,6 +37,14 @@ const Projects = ():React.ReactElement=>{
       stacks:['Tailwindcss','NEXTJS', 'Context Api', 'Radix Ui'],
       projectName:'Telex',
       projectImage:meticapp
+    },
+    {
+      accessVariant:isTab?'hover':'static',
+      code_url:'#',
+      website_url:'https://staging.bor.com.ng/',
+      stacks:['Tailwindcss','NEXTJS', 'Context Api', 'ShadCN'],
+      projectName:'Borough',
+      projectImage:borough
     },
     {
       accessVariant:isTab?'hover':'static',
