@@ -12,39 +12,51 @@ function App() {
   const skills = [
     {
       title:'Html',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'Css',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'Javascript',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'Typescript',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'React',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'Tailwind Css',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'NextJS',
-      yearsOfExp:2,
+      yearsOfExp:3,
     },
     {
       title:'NodeJS',
       yearsOfExp:2,
     },
     {
+      title:'ExpressJS',
+      yearsOfExp:2,
+    },
+    {
+      title:'NestJS',
+      yearsOfExp:1,
+    },
+    {
       title:'MySQL',
       yearsOfExp:2,
+    },
+    {
+      title:'PostgreSQL',
+      yearsOfExp:1,
     },
   ]
   const isTab = useMediaQuery({

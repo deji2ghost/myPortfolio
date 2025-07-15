@@ -8,6 +8,7 @@ import table from '../../assets/images/Table.png'
 import borough from '../../assets/images/Screenshot (15).png'
 import fonu from '../../assets/images/Screenshot (7).png'
 import asterisk from '../../assets/images/Screenshot (8).png'
+import xbanka from '../../assets/images/Screenshot (93).png'
 const Projects = ():React.ReactElement=>{
   const isTab = useMediaQuery({
     query: '(min-width: 800px)'
@@ -17,9 +18,17 @@ const Projects = ():React.ReactElement=>{
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
+      website_url:'https://www.xbankang.com/',
+      stacks:['Tailwind Css','NEXTJS', 'React Query'],
+      projectName:'Xbanka',
+      projectImage: xbanka
+    },
+    {
+      accessVariant:isTab?'hover':'static',
+      code_url:'#',
       website_url:'https://www.asteriskrd.co/',
       stacks:['Tailwind Css','REACTJS'],
-      projectName:'Tifi Video and Audio converter',
+      projectName:'AsteriskRD Website',
       projectImage:asterisk
     },
     {
@@ -45,23 +54,7 @@ const Projects = ():React.ReactElement=>{
       stacks:['Tailwindcss','NEXTJS', 'Context Api', 'ShadCN'],
       projectName:'Borough',
       projectImage:borough
-    },
-    {
-      accessVariant:isTab?'hover':'static',
-      code_url:'#',
-      website_url:'https://intellisight-two.vercel.app/',
-      stacks:['Next JS','Context Api', 'TailwindCss'],
-      projectName:'CoinTable with darkmode.',
-      projectImage: table
-    },    
-    {
-      accessVariant:isTab?'hover':'static',
-      code_url:'#',
-      website_url:'https://fonutaskmanagement.vercel.app/',
-      stacks:['Next JS','Redux', 'Redux Toolkit', 'TailwindCss'],
-      projectName:'CoinTable with darkmode.',
-      projectImage: fonu
-    },    
+    },   
   ]
   return (
     <ProjectsContainer>
