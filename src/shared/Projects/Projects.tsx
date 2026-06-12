@@ -9,12 +9,29 @@ import borough from '../../assets/images/Screenshot15.png'
 // import fonu from '../../assets/images/Screenshot (7).png'
 import asterisk from '../../assets/images/Screenshot8.png'
 import xbanka from '../../assets/images/Screenshot93.png'
+import vApp from '../../assets/images/IMG_506272A1E52B-1.jpeg'
 const Projects = ():React.ReactElement=>{
   const isTab = useMediaQuery({
     query: '(min-width: 800px)'
   })
 
   const porfolio_data:PortfolioDisplayProp[] =[
+    {
+      accessVariant:isTab?'hover':'static',
+      code_url:'#',
+      website_url:'https://v-app.iabcodesltd.com/login',
+      stacks:['Tailwind Css','NEXTJS', 'React Query', ' PWA (next-pwa)'],
+      projectName:'V App',
+      projectImage: vApp
+    },
+    {
+      accessVariant:isTab?'hover':'static',
+      code_url:'#',
+      website_url:'https://telex.im',
+      stacks:['Tailwindcss','NEXTJS', 'Context Api', 'Radix Ui'],
+      projectName:'Telex',
+      projectImage:meticapp
+    },
     {
       accessVariant:isTab?'hover':'static',
       code_url:'#',
@@ -38,14 +55,6 @@ const Projects = ():React.ReactElement=>{
       stacks:['Tailwind Css','NEXTJS', 'Radix Ui'],
       projectName:'Tifi Video and Audio converter',
       projectImage:EmetricImg
-    },
-    {
-      accessVariant:isTab?'hover':'static',
-      code_url:'#',
-      website_url:'https://telex.im',
-      stacks:['Tailwindcss','NEXTJS', 'Context Api', 'Radix Ui'],
-      projectName:'Telex',
-      projectImage:meticapp
     },
     {
       accessVariant:isTab?'hover':'static',

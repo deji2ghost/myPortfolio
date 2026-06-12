@@ -1,4 +1,4 @@
-import { MainPortfolioImageContainer,PortfolioImageCover, PortfolioContent, PortfolioDisplayContainer } from './PortfolioDisplay.style'
+import { MainPortfolioImageContainer,PortfolioImageCover, PortfolioContent, PortfolioDisplayContainer, PortfolioImageClass } from './PortfolioDisplay.style'
 import Projectdummy from '../../assets/images/projectdummy.webp'
 import UnderLineSpan from '../UnderLineSpan/UnderLineSpan'
 import { toast } from 'react-hot-toast';
@@ -29,7 +29,7 @@ const PortfolioDisplay = ({projectName,projectImage,accessVariant='static',code_
   return (
     <PortfolioDisplayContainer>
       <MainPortfolioImageContainer>
-        <img src={projectImage} alt="" />
+        <PortfolioImageClass src={projectImage} alt="" className='PortfolioImageClass'/>
         {
           accessVariant=='hover'?
             <PortfolioImageCover className='PortfolioImageCover'>
@@ -54,7 +54,7 @@ const PortfolioDisplay = ({projectName,projectImage,accessVariant='static',code_
                     >VIEW CODE</p>
                   </UnderLineSpan>:''
               }
-            </PortfolioImageCover>:''
+            </PortfolioImageCover> : ''
         }
       </MainPortfolioImageContainer>
         

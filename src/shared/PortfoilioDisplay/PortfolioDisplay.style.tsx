@@ -42,6 +42,10 @@ export const PortfolioImageCover = styled.div`
     
 `
 
+export const PortfolioImageClass =styled.img`
+    max-height: 250px;
+`
+
 export const PortfolioContent =styled.div`
 h2{
     font-size: 1rem;
