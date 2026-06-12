@@ -51,6 +51,10 @@ function App() {
       yearsOfExp:3,
     },
     {
+      title:'Docker',
+      yearsOfExp:3,
+    },
+    {
       title:'MySQL',
       yearsOfExp:3,
     },
