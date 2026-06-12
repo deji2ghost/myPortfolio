@@ -1,5 +1,4 @@
 import { HeroContentContainer, HeroSectionContainer } from './HeroSection.style'
-import DevPic from '../../assets/images/image-profile-mobile.webp'
 // import DevPicDesktop from '../../assets/images/image-profile-desktop.webp'
 import markopics from '../../assets/images/276.jpg'
 import UnderLineSpan from '../UnderLineSpan/UnderLineSpan'

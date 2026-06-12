@@ -21,7 +21,7 @@ const Nav= ():React.ReactElement=>{
           socials.map((d,index)=>(
             <li
               key={index}
-            ><img src={d.img} onClick={e=>{
+            ><img src={d.img} onClick={()=>{
                 window.open(d.link,'_blank')
               }} alt="" /></li>
           ))

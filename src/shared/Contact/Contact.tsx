@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { ContactContainer } from './Contact.style'
 import InputWithLabel from '../InputWithLabel/InputWithLabel'
 import { useForm } from 'react-hook-form';
@@ -6,10 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Nav from '../Nav/Nav';
 import Line from '../Line/Line';
-import UnderLineSpan from '../UnderLineSpan/UnderLineSpan';
 import Button from '../Button/Button';
-import { useMutation } from '@tanstack/react-query';
-import { sendMail } from '../../api/mail.api';
 import { toast } from 'react-hot-toast';
 import Preloader from '../Preloader/Preloader';
 
@@ -56,8 +53,7 @@ const Contact = ()=>{
   };
   
   const { 
-    register,setValue, 
-    handleSubmit,control,
+    register, 
     formState: { errors },reset
   } = useForm<ContactFormType>({ resolver: yupResolver(schema) });
 
