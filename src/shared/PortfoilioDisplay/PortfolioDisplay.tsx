@@ -4,12 +4,12 @@ import {
   PortfolioContent,
   PortfolioDisplayContainer,
   PortfolioImageClass,
-} from "./PortfolioDisplay.style";
-import UnderLineSpan from "../UnderLineSpan/UnderLineSpan";
-import { toast } from "react-hot-toast";
+} from './PortfolioDisplay.style';
+import UnderLineSpan from '../UnderLineSpan/UnderLineSpan';
+import { toast } from 'react-hot-toast';
 
 export type PortfolioDisplayProp = {
-  accessVariant?: "hover" | "static";
+  accessVariant?: 'hover' | 'static';
   code_url?: string;
   website_url?: string;
   stacks?: string[];
@@ -19,7 +19,7 @@ export type PortfolioDisplayProp = {
 const PortfolioDisplay = ({
   projectName,
   projectImage,
-  accessVariant = "static",
+  accessVariant = 'static',
   code_url,
   website_url,
   stacks = [],
@@ -27,18 +27,18 @@ const PortfolioDisplay = ({
   const openNewRoute = (
     e: React.MouseEvent,
     url: string,
-    link_type: "code" | "website" = "website",
+    link_type: 'code' | 'website' = 'website',
   ) => {
     e.preventDefault();
-    if (url == "#") {
-      if (link_type === "website") {
-        toast.error("Coming soon...");
+    if (url == '#') {
+      if (link_type === 'website') {
+        toast.error('Coming soon...');
       } else {
-        toast.error("Sorry the code is private");
+        toast.error('Sorry the code is private');
       }
       return;
     }
-    window.open(url, "_blank");
+    window.open(url, '_blank');
   };
   return (
     <PortfolioDisplayContainer>
@@ -48,7 +48,7 @@ const PortfolioDisplay = ({
           alt=""
           className="PortfolioImageClass"
         />
-        {accessVariant == "hover" ? (
+        {accessVariant == 'hover' ? (
           <PortfolioImageCover className="PortfolioImageCover">
             {website_url ? (
               <UnderLineSpan giveSpace small_border={true}>
@@ -57,29 +57,29 @@ const PortfolioDisplay = ({
                     openNewRoute(e, website_url);
                   }}
                 >
-                  VIEW PROJECT{" "}
+                  VIEW PROJECT{' '}
                 </p>
               </UnderLineSpan>
             ) : (
-              ""
+              ''
             )}
 
             {code_url ? (
               <UnderLineSpan giveSpace small_border={true}>
                 <p
                   onClick={(e) => {
-                    openNewRoute(e, code_url, "code");
+                    openNewRoute(e, code_url, 'code');
                   }}
                 >
                   VIEW CODE
                 </p>
               </UnderLineSpan>
             ) : (
-              ""
+              ''
             )}
           </PortfolioImageCover>
         ) : (
-          ""
+          ''
         )}
       </MainPortfolioImageContainer>
 
@@ -90,7 +90,7 @@ const PortfolioDisplay = ({
             <p key={index}>{d.toUpperCase()}</p>
           ))}
         </div>
-        {accessVariant == "static" ? (
+        {accessVariant == 'static' ? (
           <div className="porfolio_view_container">
             {website_url ? (
               <UnderLineSpan giveSpace small_border={true}>
@@ -99,28 +99,28 @@ const PortfolioDisplay = ({
                     openNewRoute(e, website_url);
                   }}
                 >
-                  VIEW PROJECT{" "}
+                  VIEW PROJECT{' '}
                 </p>
               </UnderLineSpan>
             ) : (
-              ""
+              ''
             )}
             {code_url ? (
               <UnderLineSpan giveSpace small_border={true}>
                 <p
                   onClick={(e) => {
-                    openNewRoute(e, code_url, "code");
+                    openNewRoute(e, code_url, 'code');
                   }}
                 >
                   VIEW CODE
                 </p>
               </UnderLineSpan>
             ) : (
-              ""
+              ''
             )}
           </div>
         ) : (
-          ""
+          ''
         )}
       </PortfolioContent>
     </PortfolioDisplayContainer>
