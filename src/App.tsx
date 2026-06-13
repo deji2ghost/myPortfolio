@@ -51,6 +51,14 @@ function App() {
       yearsOfExp:3,
     },
     {
+      title:'Python',
+      yearsOfExp:3,
+    },
+    {
+      title:'Django',
+      yearsOfExp:3,
+    },
+    {
       title:'Docker',
       yearsOfExp:3,
     },
