@@ -3,6 +3,7 @@ import { InputWithLabelContainer,TextAreaWithLabelContainer } from './InputWithL
 
 
 type Prop ={
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
     register:any,
     errorMessage?:string,
     label:string,

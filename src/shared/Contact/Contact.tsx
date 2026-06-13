@@ -22,6 +22,7 @@ type ContactFormType = yup.InferType<typeof schema>
 const Contact = ()=>{
   const [isLoading, setIsLoading] = useState(false)
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (event: any) => {
     event.preventDefault();
     const formData = new FormData(event.target);
